@@ -1,0 +1,754 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    /* background-color: wheat; */
+   
+    
+}
+.home
+{    
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/Designer\ \(1\).png);
+    background-position: bottom;
+    background-size: contain;
+    padding: 10px 10%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-color: #03AED2;
+    
+
+}
+nav
+{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    width: 200px;
+
+}
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin-top: 10px 15px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    padding: 15px;
+}
+.cotainer1
+{ 
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+    
+}
+.btn
+{
+    border: none;
+    margin: 20px;
+    padding: 15px;
+    width: 150px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #000;
+    background-size: 200%;
+    transition: 0.4s;
+    text-align: center;
+}
+  
+.btn1
+{
+    background-image: linear-gradient(to left,#173B45,#B43F3F,#FF8225);
+    align-items: center;
+    
+}  
+
+.btn2
+{
+    background-image: linear-gradient(to left,#173B45,#B43F3F,#FF8225);
+    
+    align-content: center;
+    
+}
+.btn:hover
+{
+    background-position: right;
+    color: #fff;
+}  
+.content
+{   
+    
+    margin-top: 10%;
+    max-width: 600px;
+    /* animation */
+  
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+       
+}
+@keyframes moveup
+{
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+ /* animation */
+}
+.content h1
+{
+    font-size: 70px;
+    color: black;
+}
+.pi
+{
+    margin: 10px 0 30px;
+    color: black;
+    
+}
+.food-menu-head
+{
+    
+    width: 100%;
+    height: 200px;
+    padding: 50px;
+    background-color:#6C946F;
+    border-radius: 40px;
+    position: relative;
+    top: 50px;
+    bottom: 150px;   
+}
+.food-menu-head h2
+{
+    font-size: 70px;
+    color: whitesmoke;
+}
+.food-menu-head p
+{
+    margin: 10px 0 30px;
+    color: whitesmoke;
+}
+
+
+    /* overflow-x: hidden; */
+    .container 
+{
+   
+    height: 600px;
+    width: 100%;
+    top: 50px;
+    left: calc(50% - 300px);
+    display: flex;
+    overflow-x: auto;
+    overflow-x: hidden;
+}
+
+.card 
+{
+    top: 150px;
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-color: #6C946F;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    cursor: pointer;
+}
+
+.card:not(:first-child) 
+{
+    margin-left: -50px;
+}
+
+.card:hover 
+{
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card 
+{
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+
+.title 
+{
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.bar 
+{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+}
+
+.emptybar 
+{
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+}
+
+.filledbar 
+{
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar 
+{
+    width: 120px;
+    transition: 0.4s ease-out;
+}
+
+
+
+.card:hover .stroke
+{
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+}
+.img
+{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.img-area
+{
+    position: absolute;
+    top: 130px;
+    left: 25px;
+
+}
+ 
+.menu-title
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+.img2
+{
+    width: 100%;
+    border-radius: 50px;
+}
+.menu
+{
+   width: 100%; 
+   height: 1600px;
+   position: relative;
+   top: 100px;
+
+}
+table
+{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hmenu
+{
+   
+    font-size: 60px;
+    position: absolute;
+    top: -10%;
+    left: 48.5%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(to left,#FF8225,#B43F3F,#FF8225);
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    width: 90%;
+    border-radius: 30px;
+    text-align: center;
+    color: black;
+    background-size: 200%;
+    transition: 2s;      
+}
+.hmenu:hover
+{
+    background-position: right;
+    color: #000;
+}  
+.row
+{
+    position: relative;
+    top: 100px;
+    width: 350px;
+    height: 250px;
+    /* border: 2px solid #B43F3F; */
+    padding: 30px;
+    margin: 30px;
+    border-radius: 30px;
+}
+.row
+{
+    color: whitesmoke;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.5s;
+    text-shadow: 3px 3px 3px black;
+}
+.row:hover
+{
+    transform: scale(1.3);
+    z-index: 2;
+}
+/* rowa1  */
+.detailsrowa1
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowa1 span
+{
+    font-size: 30px; 
+}
+.rowa1 
+{
+    background-image: url(./images/menu-items/chicken\ mandi.jpg);
+}
+/* rowa1 end */
+/* rowa2  */
+.detailsrowa2
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowa2 span
+{
+    font-size: 30px; 
+}
+.rowa2 
+{
+    background-image: url(./images/menu-items/beef\ mandi.jpg);
+}
+/* rowa2 end*/
+/* rowa3  */
+.detailsrowa3
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowa3 span
+{
+    font-size: 30px; 
+}
+.rowa3
+{
+    background-image: url(./images/menu-items/Alfaham\ Mandi.jpg);
+}
+/* rowa3 end */
+/* rowa4 */
+.detailsrowa4
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowa4 span
+{
+    font-size: 30px; 
+}
+.rowa4 
+{
+    background-image: url(./images/menu-items/per\ peri\ mandi.jpg);
+}
+/* rowa4 end */
+/* rowb1  */
+.detailsrowb1
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowb1 span
+{
+    font-size: 30px; 
+}
+.rowb1 
+{
+    background-image: url(./images/menu-items/Sadhya.jpg);
+}
+/* rowb1 end */
+/* rowb2  */
+.detailsrowb2
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowb2 span
+{
+    font-size: 30px; 
+}
+.rowb2 
+{
+    background-image: url(./images/menu-items/Hyderabadi-Chicken-Biryani.jpg);
+}
+/* rowb2 end*/
+/* rowb3  */
+.detailsrowb3
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowb3 span
+{
+    font-size: 30px; 
+}
+.rowb3
+{
+    background-image: url(./images/menu-items/beef\ biryani.jpg);
+}
+/* rowb3 end */
+/* rowb4 */
+.detailsrowb4
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowb4 span
+{
+    font-size: 30px; 
+}
+.rowb4 
+{
+    background-image: url(./images/menu-items/vegetable-biryani.jpg);
+}
+/* rowb4 end */
+/* rowc1  */
+.detailsrowc1
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowc1 span
+{
+    font-size: 30px; 
+}
+.rowc1 
+{
+    background-image: url(./images/menu-items/Chicken-Fried-Rice-square-FS-.jpg);
+}
+/* rowc1 end */
+/* rowc2  */
+.detailsrowc2
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowc2 span
+{
+    font-size: 30px; 
+}
+.rowc2 
+{
+    background-image: url(./images/menu-items/chow-mein.jpg);
+}
+/* rowc2 end*/
+/* rowc3  */
+.detailsrowc3
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowc3 span
+{
+    font-size: 30px; 
+}
+.rowc3
+{
+    background-image: url(./images/menu-items/Mapo\ tofu.jpg);
+}
+/* rowc3 end */
+/* rowc4 */
+.detailsrowc4
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowc4 span
+{
+    font-size: 30px; 
+}
+.rowc4 
+{
+    background-image: url(./images/menu-items/Pepperonipizza.jpg);
+}
+/* rowc4 end */
+/* rowd1  */
+.detailsrowd1
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowd1 span
+{
+    font-size: 30px; 
+}
+.rowd1 
+{
+    background-image: url(./images/menu-items/Cheese-pizza-1.jpg);
+}
+/* rowd1 end */
+/* rowd2  */
+.detailsrowd2
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowd2 span
+{
+    font-size: 30px; 
+}
+.rowd2 
+{
+    background-image: url(./images/menu-items/PlainGheeRoastDosa.jpg);
+}
+/* rowd2 end*/
+/* rowd3  */
+.detailsrowd3
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowd3 span
+{
+    font-size: 30px; 
+}
+.rowd3
+{
+    background-image: url(./images/menu-items/Masala\ dosa.jpg);
+}
+/* rowd3 end */
+/* rowd4 */
+.detailsrowd4
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowd4 span
+{
+    font-size: 30px; 
+}
+.rowd4 
+{
+    background-image: url(./images/menu-items/porotta\ beef\ combo.jpg);
+}
+/* rowd4 end */
+/* rowe1  */
+.detailsrowe1
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowe1 span
+{
+    font-size: 30px; 
+}
+.rowe1 
+{
+    background-image: url(./images/menu-items/Shaorma.jpg);
+}
+/* rowe1 end */
+/* rowe2  */
+.detailsrowe2
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowe2 span
+{
+    font-size: 30px; 
+}
+.rowe2 
+{
+    background-image: url(./images/menu-items/ramen.jpg);
+}
+/* rowe2 end*/
+/* rowe3  */
+.detailsrowe3
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowe3 span
+{
+    font-size: 30px; 
+}
+.rowe3
+{
+    background-image: url(./images/menu-items/Udon.jpg);
+}
+/* rowe3 end */
+/* rowe4 */
+.detailsrowe4
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowe4 span
+{
+    font-size: 30px; 
+}
+.rowe4 
+{
+    background-image: url(./images/menu-items/korean\ barbaque.jpg);
+}
+/* rowe4 end */
+/* rowf1  */
+.detailsrowf1
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowf1 span
+{
+    font-size: 30px; 
+}
+.rowf1 
+{
+    background-image: url(./images/menu-items/Budae\ jjigae.jpg);
+}
+/* rowf1 end */
+/* rowf2  */
+.detailsrowf2
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowf2 span
+{
+    font-size: 30px; 
+}
+.rowf2 
+{
+    background-image: url(./images/menu-items/Bulgogi.jpg);
+}
+/* rowf2 end*/
+/* rowf3  */
+.detailsrowf3
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowf3 span
+{
+    font-size: 30px; 
+}
+.rowf3
+{
+    background-image: url(./images/menu-items/Lasagne.jpg);
+}
+/* rowf3 end */
+/* rowf4 */
+.detailsrowf4
+{
+    position: absolute;
+    bottom: 20px;
+}
+.detailsrowf4 span
+{
+    font-size: 30px; 
+}
+.rowf4 
+{
+    background-image: url(./images/menu-items/french-onion-soup.jpg);
+}
+/* rowf4 end */
+/* footer */
+footer
+{
+    background-color: #07110e;
+    color: aliceblue;
+    position: relative;
+    bottom:  0px;
+    top: 400px;
+   
+}
+a
+{
+    text-decoration: none;
+    color: aliceblue;
+}
+#parent
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+    
+}
+.child
+{
+    padding: 10px;
+    justify-content: space-between;
+}
+footer ul:hover
+
+{
+    color: rgb(190, 89, 89);
+}
+
+footer a:hover
+{
+    color: rgb(190, 89, 89);
+}
+.social
+{
+    padding: -50px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+ul
+{
+    padding: 20px;
+    cursor: pointer;
+}
+h3
+{
+    padding: 20px;
+    cursor: pointer;
+}

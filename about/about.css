@@ -1,0 +1,37 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color: whitesmoke;
+    transition: 2s;
+}
+h1
+{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+h3
+{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+p
+{
+    position: relative;
+    top: 400px;
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+}
+*:hover
+{
+    color: crimson;
+}
